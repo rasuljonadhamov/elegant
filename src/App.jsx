@@ -1,11 +1,17 @@
-import React from 'react'
+import Navbar from "./components/Navbar";
+import ProductsList from "./components/ProductsList";
+import Footer from "./components/Footer";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      Hello world
+    <div className="App">
+      <Navbar />
+      <main className="container mx-auto p-4">
+        <ProductsList />
+      </main>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
