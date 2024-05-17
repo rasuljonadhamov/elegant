@@ -28,6 +28,10 @@ function Filter() {
           <MenuItem value="All rooms">All rooms</MenuItem>
           <MenuItem value="Living Room">Living Room</MenuItem>
           <MenuItem value="Bedroom">Bedroom</MenuItem>
+          <MenuItem value="Kitchen">Kitchen</MenuItem>
+          <MenuItem value="Bathroom">Bathroom</MenuItem>
+          <MenuItem value="Dining">Dining</MenuItem>
+          <MenuItem value="Outdoor">Outdoor</MenuItem>
         </Select>
       </FormControl>
 
@@ -39,8 +43,11 @@ function Filter() {
           defaultValue="All"
         >
           <MenuItem value="All">All</MenuItem>
-          <MenuItem value="0-99$">0-99$</MenuItem>
-          <MenuItem value="100-199$">100-199$</MenuItem>
+          <MenuItem value="0-99.99$">0-99.99$</MenuItem>
+          <MenuItem value="100-199.99$">100-199.99$</MenuItem>
+          <MenuItem value="200-299.99$">200-299.99$</MenuItem>
+          <MenuItem value="300-399.99$">300-399.99$</MenuItem>
+          <MenuItem value="400$+">400$+</MenuItem>
         </Select>
       </FormControl>
     </div>

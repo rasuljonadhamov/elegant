@@ -1,6 +1,4 @@
-
-import { Card } from "antd";
-
+import { Card, Rate } from "antd";
 
 function ProductsList({ products }) {
   return (
@@ -11,9 +9,10 @@ function ProductsList({ products }) {
           title={product.name}
           cover={<img alt={product.name} src={product.image} />}
         >
-          <p>{product.description}</p>
-          <p>{product.price}</p>
-        </Card>
+          <Rate disabled defaultValue={product.rating} />
+          <p>{product.desc}</p>
+          <p>{product.price} $</p>
+        </Card> 
       ))}
     </div>
   );
