@@ -225,8 +225,8 @@ const initialState = {
       rating: 4,
       price: 150,
       image: "/public/bg.png",
-    }
-  ]
+    },
+  ],
 };
 
 const productsSlice = createSlice({
@@ -239,14 +239,18 @@ const productsSlice = createSlice({
     setPriceRangeFilter: (state, action) => {
       state.filters.priceRange = action.payload;
     },
+    setSortBy: (state, action) => {
+      state.filters.sortBy = action.payload;
+    },
   },
 });
 
-export const { setCategoryFilter, setPriceRangeFilter } = productsSlice.actions;
+export const { setCategoryFilter, setPriceRangeFilter, setSortBy } =
+  productsSlice.actions;
 
 export const selectProducts = (state) => {
-  const { category, priceRange } = state.products.filters;
-  return state.products.products.filter((product) => {
+  const { category, priceRange, sortBy } = state.products.filters;
+  let filteredProducts = state.products.products.filter((product) => {
     let matchesCategory =
       category === "All rooms" || product.category === category;
     let matchesPrice =
@@ -264,6 +268,14 @@ export const selectProducts = (state) => {
       (priceRange === "400$+" && product.price >= 400);
     return matchesCategory && matchesPrice;
   });
+
+  if (sortBy === "price") {
+    filteredProducts = filteredProducts.sort((a, b) => a.price - b.price);
+  } else if (sortBy === "rating") {
+    filteredProducts = filteredProducts.sort((a, b) => b.rating - a.rating);
+  }
+
+  return filteredProducts;
 };
 
 export default productsSlice.reducer;

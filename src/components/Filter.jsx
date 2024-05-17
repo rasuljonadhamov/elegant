@@ -1,57 +1,79 @@
-import { useDispatch } from "react-redux";
+import React from "react";
 import {
-  setCategoryFilter,
-  setPriceRangeFilter,
-} from "../features/products/productsSlice";
-import { MenuItem, FormControl, Select, InputLabel } from "@mui/material";
+  FormControl,
+  FormControlLabel,
+  Checkbox,
+  RadioGroup,
+  Radio,
+} from "@mui/material";
+import { Typography } from "antd";
 
-function Filter() {
-  const dispatch = useDispatch();
+const { Title } = Typography;
 
+const Filter = ({ filters, setFilters }) => {
   const handleCategoryChange = (event) => {
-    dispatch(setCategoryFilter(event.target.value));
+    setFilters({ ...filters, category: event.target.value });
   };
 
-  const handlePriceRangeChange = (event) => {
-    dispatch(setPriceRangeFilter(event.target.value));
+  const handlePriceChange = (event) => {
+    setFilters({ ...filters, priceRange: event.target.value });
   };
 
   return (
-    <div className="flex justify-between mb-4">
-      <FormControl variant="outlined" className="mr-4">
-        <InputLabel>Category</InputLabel>
-        <Select
-          label="Category"
-          onChange={handleCategoryChange}
-          defaultValue="All rooms"
-        >
-          <MenuItem value="All rooms">All rooms</MenuItem>
-          <MenuItem value="Living Room">Living Room</MenuItem>
-          <MenuItem value="Bedroom">Bedroom</MenuItem>
-          <MenuItem value="Kitchen">Kitchen</MenuItem>
-          <MenuItem value="Bathroom">Bathroom</MenuItem>
-          <MenuItem value="Dining">Dining</MenuItem>
-          <MenuItem value="Outdoor">Outdoor</MenuItem>
-        </Select>
-      </FormControl>
-
-      <FormControl variant="outlined">
-        <InputLabel>Price</InputLabel>
-        <Select
-          label="Price"
-          onChange={handlePriceRangeChange}
-          defaultValue="All"
-        >
-          <MenuItem value="All">All</MenuItem>
-          <MenuItem value="0-99.99$">0-99.99$</MenuItem>
-          <MenuItem value="100-199.99$">100-199.99$</MenuItem>
-          <MenuItem value="200-299.99$">200-299.99$</MenuItem>
-          <MenuItem value="300-399.99$">300-399.99$</MenuItem>
-          <MenuItem value="400$+">400$+</MenuItem>
-        </Select>
+    <div style={{ padding: "20px", borderRight: "1px solid #ccc" }}>
+      <Title level={4}>Categories</Title>
+      <RadioGroup value={filters.category} onChange={handleCategoryChange}>
+        <FormControlLabel
+          value="All rooms"
+          control={<Radio />}
+          label="All Rooms"
+        />
+        <FormControlLabel
+          value="Living Room"
+          control={<Radio />}
+          label="Living Room"
+        />
+        <FormControlLabel value="Bedroom" control={<Radio />} label="Bedroom" />
+        <FormControlLabel value="Kitchen" control={<Radio />} label="Kitchen" />
+        <FormControlLabel
+          value="Bathroom"
+          control={<Radio />}
+          label="Bathroom"
+        />
+        <FormControlLabel value="Dinning" control={<Radio />} label="Dinning" />
+        <FormControlLabel value="Outdoor" control={<Radio />} label="Outdoor" />
+      </RadioGroup>
+      <Title level={4} style={{ marginTop: "20px" }}>
+        Price
+      </Title>
+      <FormControl component="fieldset">
+        <RadioGroup value={filters.priceRange} onChange={handlePriceChange}>
+          <FormControlLabel value="All" control={<Radio />} label="All Price" />
+          <FormControlLabel
+            value="0-99.99"
+            control={<Radio />}
+            label="$0.00 - $99.99"
+          />
+          <FormControlLabel
+            value="100-199.99"
+            control={<Radio />}
+            label="$100.00 - $199.99"
+          />
+          <FormControlLabel
+            value="200-299.99"
+            control={<Radio />}
+            label="$200.00 - $299.99"
+          />
+          <FormControlLabel
+            value="300-399.99"
+            control={<Radio />}
+            label="$300.00 - $399.99"
+          />
+          <FormControlLabel value="400+" control={<Radio />} label="$400.00+" />
+        </RadioGroup>
       </FormControl>
     </div>
   );
-}
+};
 
 export default Filter;
