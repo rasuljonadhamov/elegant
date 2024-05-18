@@ -5,3 +5,8 @@
 .active {
   border-bottom: 1px solid blue;
 }
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}

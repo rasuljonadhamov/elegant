@@ -1,16 +1,10 @@
-import {
-  AppBar,
-  Toolbar,
-  IconButton,
-  Badge,
-  Menu,
-  MenuItem,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
+import { AppBar, Toolbar, IconButton, Badge } from "@mui/material";
 import { Search, AccountCircle, ShoppingCart } from "@mui/icons-material";
+import { Menu } from "antd";
+// import "antd/dist/antd.css";
 import { styled } from "@mui/system";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+// import Link from "antd/es/typography/Link";
 
 const Logo = styled("div")({
   fontSize: "1.5rem",
@@ -19,85 +13,26 @@ const Logo = styled("div")({
 });
 
 const Header = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-
   return (
     <AppBar position="static" color="default" sx={{ backgroundColor: "white" }}>
       <Toolbar>
         <Logo>3legant.</Logo>
-        {isMobile ? (
-          <Menu
-            sx={{ flexGrow: 1 }}
-            anchorOrigin={{
-              vertical: "bottom",
-              horizontal: "right",
-            }}
-            transformOrigin={{
-              vertical: "top",
-              horizontal: "right",
-            }}
-            MenuListProps={{
-              "aria-labelledby": "basic-button",
-            }}
-          >
-            <MenuItem>
-              <NavLink exact to="/" activeClassName="active-link">
-                Home
-              </NavLink>
-            </MenuItem>
-            <MenuItem>
-              <NavLink exact to="/shop" activeClassName="active-link">
-                Shop
-              </NavLink>
-            </MenuItem>
-            <MenuItem>
-              <NavLink exact to="/product" activeClassName="active-link">
-                Product
-              </NavLink>
-            </MenuItem>
-            <MenuItem>
-              <NavLink exact to="/contact" activeClassName="active-link">
-                Contact Us
-              </NavLink>
-            </MenuItem>
-          </Menu>
-        ) : (
-          <div style={{ flexGrow: 1, margin: " 10px" }}>
-            <NavLink
-              style={{ marginRight: "15px" }}
-              exact
-              to="/"
-              activeClassName="active-link"
-            >
-              Home
-            </NavLink>
-            <NavLink
-              style={{ marginRight: "15px" }}
-              exact
-              to="/shop"
-              activeClassName="active-link"
-            >
-              Shop
-            </NavLink>
-            <NavLink
-              style={{ marginRight: "15px" }}
-              exact
-              to="/product"
-              activeClassName="active-link"
-            >
-              Product
-            </NavLink>
-            <NavLink
-              style={{ marginRight: "0px" }}
-              exact
-              to="/contact"
-              activeClassName="active-link"
-            >
-              Contact Us
-            </NavLink>
-          </div>
-        )}
+        <Menu
+          mode="horizontal"
+          defaultSelectedKeys={["1"]}
+          style={{ flexGrow: 1 }}
+        >
+          <Menu.Item key="1">
+            <Link to="/">Home</Link>
+          </Menu.Item>
+          <Menu.Item key="2">
+            <Link to="/shop">Shop</Link>
+          </Menu.Item>
+          <Menu.Item key="3">Product</Menu.Item>
+          <Menu.Item key="4">
+            <Link to="/contact">Contact Us</Link>
+          </Menu.Item>
+        </Menu>
         <IconButton color="inherit">
           <Search />
         </IconButton>
