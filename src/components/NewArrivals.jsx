@@ -71,7 +71,7 @@ const NewArrivals = () => {
     <div className="container mx-auto my-8">
       <h2 className="text-2xl font-semibold mb-4">New Arrivals</h2>
       <Slider {...settings}>
-        {products.map((product) => (
+        {products.slice(4, 14).map((product) => (
           <div key={product.id} className="p-2">
             <Badge.Ribbon text="New" color="green">
               <Card

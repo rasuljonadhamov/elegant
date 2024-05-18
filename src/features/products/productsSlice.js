@@ -16,6 +16,7 @@ const initialState = {
       rating: 5,
       price: 200,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 2,
@@ -27,6 +28,7 @@ const initialState = {
       rating: 2,
       price: 100,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 3,
@@ -38,6 +40,7 @@ const initialState = {
       rating: 3,
       price: 100,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 4,
@@ -49,6 +52,7 @@ const initialState = {
       rating: 4,
       price: 100,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 5,
@@ -60,6 +64,7 @@ const initialState = {
       rating: 5,
       price: 350,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 6,
@@ -71,6 +76,7 @@ const initialState = {
       rating: 4,
       price: 299,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 7,
@@ -82,6 +88,7 @@ const initialState = {
       rating: 5,
       price: 150,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 8,
@@ -93,6 +100,7 @@ const initialState = {
       rating: 4,
       price: 180,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 9,
@@ -104,6 +112,7 @@ const initialState = {
       rating: 5,
       price: 400,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 10,
@@ -115,6 +124,7 @@ const initialState = {
       rating: 4,
       price: 320,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 11,
@@ -126,6 +136,7 @@ const initialState = {
       rating: 3,
       price: 99,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 12,
@@ -137,6 +148,7 @@ const initialState = {
       rating: 4,
       price: 75,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 13,
@@ -148,6 +160,7 @@ const initialState = {
       rating: 4,
       price: 220,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 14,
@@ -159,6 +172,7 @@ const initialState = {
       rating: 3,
       price: 85,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 15,
@@ -170,6 +184,7 @@ const initialState = {
       rating: 4,
       price: 120,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 16,
@@ -181,6 +196,7 @@ const initialState = {
       rating: 5,
       price: 450,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 17,
@@ -192,6 +208,7 @@ const initialState = {
       rating: 4,
       price: 300,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 18,
@@ -203,6 +220,7 @@ const initialState = {
       rating: 4,
       price: 250,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 19,
@@ -214,6 +232,7 @@ const initialState = {
       rating: 3,
       price: 70,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
     {
       id: 20,
@@ -225,6 +244,7 @@ const initialState = {
       rating: 4,
       price: 150,
       image: "/public/bg.png",
+      originalPrice: 350,
     },
   ],
 };

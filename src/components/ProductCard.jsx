@@ -1,6 +1,15 @@
-import { Card, Rate, Badge } from "antd";
+import { Card, Rate, Badge, Button } from "antd";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../features/products/cartActions";
 
 const ProductCard = ({ product }) => {
+  // const products = useSelector((state) => state.products.products);
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (product) => {
+    dispatch(addToCart(product));
+  };
+
   return (
     <Badge.Ribbon text="50% OFF" color="green">
       <Card
@@ -29,6 +38,14 @@ const ProductCard = ({ product }) => {
                 )}
               </div>
               <Rate disabled defaultValue={product.rating} />
+              <Button
+                key={product.id}
+                type="primary"
+                onClick={() => handleAddToCart(product)}
+                className="w-full mt-4"
+              >
+                Add to Cart
+              </Button>
             </>
           }
         />

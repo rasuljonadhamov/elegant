@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import { Search, AccountCircle, ShoppingCart } from "@mui/icons-material";
 import { styled } from "@mui/system";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 const Logo = styled("div")({
@@ -89,10 +89,12 @@ const Header = () => {
         </IconButton>
         <IconButton color="inherit">
           <Badge
-            badgeContent={products.length ? products.length : 0}
+            badgeContent={Number(products.length) === 0 ? 0 : products.length}
             color="secondary"
           >
-            <ShoppingCart />
+            <Link to={"/product"}>
+              <ShoppingCart />
+            </Link>
           </Badge>
         </IconButton>
       </Toolbar>
