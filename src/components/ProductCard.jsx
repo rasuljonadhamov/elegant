@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, Rate, Badge } from "antd";
 
 const ProductCard = ({ product }) => {

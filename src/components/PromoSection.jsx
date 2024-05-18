@@ -1,5 +1,3 @@
-import React from "react";
-
 const PromoSection = () => {
   return (
     <div className="container mx-auto my-8 flex flex-col md:flex-row items-center gap-16 bg-gray-100 p-4">

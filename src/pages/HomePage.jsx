@@ -3,6 +3,7 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import CategorySection from "../components/CategorySection";
 import FeaturesSection from "../components/FeaturesSection";
 import PromoSection from "../components/PromoSection";
+import NewArrivals from "../components/NewArrivals";
 
 const NextArrow = ({ onClick }) => (
   <div
@@ -69,6 +70,7 @@ function HomePage() {
       </div>
 
       <CategorySection />
+      <NewArrivals />
       <FeaturesSection />
       <PromoSection />
     </div>
