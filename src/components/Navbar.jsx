@@ -64,6 +64,11 @@ const Header = () => {
                 Contact Us
               </NavLink>
             </MenuItem>
+            <MenuItem>
+              <NavLink exact to="/blog">
+                Contact Us
+              </NavLink>
+            </MenuItem>
           </Menu>
         ) : (
           <div style={{ flexGrow: 1, margin: " 10px" }}>
@@ -75,6 +80,9 @@ const Header = () => {
             </NavLink>
             <NavLink style={{ marginRight: "15px" }} exact to="/product">
               Product
+            </NavLink>
+            <NavLink style={{ marginRight: "15px" }} exact to="/blog">
+              Blog
             </NavLink>
             <NavLink style={{ marginRight: "0px" }} exact to="/contact">
               Contact Us

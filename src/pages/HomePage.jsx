@@ -4,6 +4,7 @@ import CategorySection from "../components/CategorySection";
 import FeaturesSection from "../components/FeaturesSection";
 import PromoSection from "../components/PromoSection";
 import NewArrivals from "../components/NewArrivals";
+import Articles from "../components/Article";
 
 const NextArrow = ({ onClick }) => (
   <div
@@ -39,7 +40,7 @@ function HomePage() {
   };
 
   return (
-    <div className="w-screen">
+    <div className="w-screen container mx-auto px-5">
       <Slider {...settings}>
         <div className="w-screen bg-white">
           <div className="bg-[url('/public/hero.png')] h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center mb-28">
@@ -73,6 +74,7 @@ function HomePage() {
       <NewArrivals />
       <FeaturesSection />
       <PromoSection />
+      <Articles />
     </div>
   );
 }

@@ -26,7 +26,7 @@ const ProductPage = () => {
       {cartItems.length === 0 ? (
         <div className="text-center">
           <Empty description="Your cart is empty. Go to shopping!" />
-          <Button type="primary" href="/shop">
+          <Button type="primary" href="/shop" className="mt-4">
             Go to Shopping
           </Button>
         </div>
