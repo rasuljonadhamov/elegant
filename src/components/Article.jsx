@@ -1,19 +1,19 @@
 const articles = [
   {
     id: 1,
-    image: "/public/bg.png",
+    image: "/bg.png",
     title: "7 ways to decorate your home",
     link: "/blog",
   },
   {
     id: 2,
-    image: "/public/hero.png",
+    image: "/hero.png",
     title: "Kitchen organization",
     link: "/blog",
   },
   {
     id: 3,
-    image: "/public/bg.png",
+    image: "/bg.png",
     title: "Decor your bedroom",
     link: "/blog",
   },

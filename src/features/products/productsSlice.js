@@ -15,7 +15,7 @@ const initialState = {
         "A comfortable white sofa with a modern design, perfect for any living room. It offers great seating comfort and durability.",
       rating: 5,
       price: 200,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -27,7 +27,7 @@ const initialState = {
         "An elegant white chair with a sturdy frame, ideal for bedroom seating. It provides excellent back support and style.",
       rating: 2,
       price: 100,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -39,7 +39,7 @@ const initialState = {
         "A stylish white sofa that adds a touch of sophistication to any living space. It's built for comfort and long-lasting use.",
       rating: 3,
       price: 100,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -51,7 +51,7 @@ const initialState = {
         "A luxurious white bed with a robust frame, ensuring a restful night's sleep. It combines elegance with functionality.",
       rating: 4,
       price: 100,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -63,7 +63,7 @@ const initialState = {
         "A classic wooden dining table that comfortably seats six. It's perfect for family dinners and gatherings.",
       rating: 5,
       price: 350,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -75,7 +75,7 @@ const initialState = {
         "A sleek and modern kitchen cabinet with ample storage space for all your kitchen essentials.",
       rating: 4,
       price: 299,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -87,7 +87,7 @@ const initialState = {
         "A comfortable and weather-resistant outdoor chair, perfect for your patio or garden.",
       rating: 5,
       price: 150,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -99,7 +99,7 @@ const initialState = {
         "An elegant bathroom sink with a modern design, made from high-quality materials for durability.",
       rating: 4,
       price: 180,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -111,7 +111,7 @@ const initialState = {
         "A stylish patio set that includes a table and four chairs, perfect for outdoor dining and relaxation.",
       rating: 5,
       price: 400,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -123,7 +123,7 @@ const initialState = {
         "A functional kitchen island with additional counter space and storage, ideal for meal preparation.",
       rating: 4,
       price: 320,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -135,7 +135,7 @@ const initialState = {
         "A spacious bathroom cabinet that offers ample storage for all your bathroom essentials.",
       rating: 3,
       price: 99,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -147,7 +147,7 @@ const initialState = {
         "A comfortable dining chair with a cushioned seat and backrest, perfect for long dinners.",
       rating: 4,
       price: 75,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -159,7 +159,7 @@ const initialState = {
         "A durable outdoor table made from weather-resistant materials, ideal for your patio or garden.",
       rating: 4,
       price: 220,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -171,7 +171,7 @@ const initialState = {
         "A modern kitchen stool with a sleek design, providing comfortable seating at your kitchen counter.",
       rating: 3,
       price: 85,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -183,7 +183,7 @@ const initialState = {
         "An elegant bathroom mirror with a contemporary design, perfect for any modern bathroom.",
       rating: 4,
       price: 120,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -195,7 +195,7 @@ const initialState = {
         "A complete dining set that includes a table and six chairs, designed for comfort and style.",
       rating: 5,
       price: 450,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -207,7 +207,7 @@ const initialState = {
         "A comfortable outdoor sofa made with weather-resistant materials, perfect for lounging in your garden.",
       rating: 4,
       price: 300,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -219,7 +219,7 @@ const initialState = {
         "A sturdy wooden kitchen table that offers ample space for meal preparation and dining.",
       rating: 4,
       price: 250,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -231,7 +231,7 @@ const initialState = {
         "A functional bathroom shelf that provides extra storage space for your bathroom items.",
       rating: 3,
       price: 70,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
     {
@@ -243,7 +243,7 @@ const initialState = {
         "A comfortable dining bench that can accommodate multiple guests, perfect for family meals.",
       rating: 4,
       price: 150,
-      image: "/public/bg.png",
+      image: "/bg.png",
       originalPrice: 350,
     },
   ],
