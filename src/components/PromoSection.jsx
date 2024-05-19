@@ -1,7 +1,7 @@
 const PromoSection = () => {
   return (
     <div className="container mx-auto my-8 flex flex-col md:flex-row items-center gap-16 bg-gray-100 p-4">
-      <img src="/public/hero.png" alt="Promo" className="w-full md:w-1/2" />
+      <img src="/hero.png" alt="Promo" className="w-full md:w-1/2" />
       <div className="md:w-1/2 p-4">
         <p className="uppercase text-indigo-700 mb-5 font-bold">
           SALE UP TO 35% OFF
